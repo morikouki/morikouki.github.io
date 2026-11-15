@@ -1,11 +1,73 @@
 <!doctype html>
+<html lang="ja">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>メルトモ</title>
-<body style="font-family:sans-serif;max-width:640px;margin:40px auto;padding:0 16px;line-height:1.8">
-<h1>メルトモ</h1>
-<p>あの頃のケータイメールを、もう一度。メルトモどうしで、ガラケーみたいにメールしよう。</p>
-<p><a href="https://apps.apple.com/jp/app/id6832219807">App Store でダウンロード</a></p>
-<p><a href="https://repeated-tarsal-b1a.notion.site/412d66fe4fb3801583d9c1ca8524b9f8">プライバシーポリシー</a> ・
-<a href="https://minnanomannaka.formedge.app/forms/81f0f601-2df3-4354-9516-9fddffa1e848">お問い合わせ</a></p>
+<title>アプリ一覧 | KOKI MORI</title>
+<meta name="description" content="メルトモ・ちいさなアパートの紹介、プライバシーポリシー、お問い合わせ">
+<style>
+  :root { --bg: #FBF7F0; --card: #FFFFFF; --text: #2F2620; --sub: #7A6A5C; --line: #EADFCF; --link: #B4612A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1C1916; --card: #26221E; --text: #F2EBE3; --sub: #B5A898; --line: #3A332C; --link: #E39A5E; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif; line-height: 1.8; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .lead { color: var(--sub); margin: 0 0 32px; }
+  .app { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; margin-bottom: 20px; }
+  .head { display: flex; gap: 16px; align-items: center; }
+  .head img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  h2 { font-size: 20px; margin: 0; }
+  .tagline { color: var(--sub); margin: 2px 0 0; font-size: 14px; }
+  .app p.desc { margin: 14px 0 12px; }
+  .store { display: inline-block; background: var(--text); color: var(--bg); text-decoration: none; font-weight: 700;
+           padding: 8px 16px; border-radius: 999px; font-size: 14px; }
+  .links { margin-top: 12px; font-size: 14px; }
+  .links a { color: var(--link); margin-right: 14px; white-space: nowrap; }
+  footer { color: var(--sub); font-size: 12px; text-align: center; margin-top: 36px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>アプリ一覧</h1>
+  <p class="lead">ひとりで作っている iPhone アプリです。</p>
+
+  <section class="app" id="chiisana-apartment">
+    <div class="head">
+      <img src="chiisana-apartment.png" alt="ちいさなアパートのアイコン">
+      <div>
+        <h2>ちいさなアパート</h2>
+        <p class="tagline">ドット絵のアパートで、ちいさく暮らそう</p>
+      </div>
+    </div>
+    <p class="desc">ドット絵のアパートに入居して、家具と内装で部屋をつくるアプリです。となりの住人とあいさつやいいねを送りあったり、空から飛んでくるダンボールでペットを迎えたり。ゆるくつながる、ちいさな暮らし。</p>
+    <a class="store" href="https://apps.apple.com/jp/app/id6834194847">App Store で見る</a>
+    <div class="links">
+      <a href="https://chiisana-apartment.chiisana-apartment-server.workers.dev/privacy">プライバシーポリシー</a>
+      <a href="https://chiisana-apartment.chiisana-apartment-server.workers.dev/terms">利用規約</a>
+      <a href="https://chiisana-apartment.chiisana-apartment-server.workers.dev/support">サポート</a>
+    </div>
+  </section>
+
+  <section class="app" id="merutomo">
+    <div class="head">
+      <img src="merutomo.png" alt="メルトモのアイコン">
+      <div>
+        <h2>メルトモ</h2>
+        <p class="tagline">あの頃のケータイメールを、もう一度</p>
+      </div>
+    </div>
+    <p class="desc">メルトモどうしで、ガラケーみたいにメールしよう。</p>
+    <a class="store" href="https://apps.apple.com/jp/app/id6832219807">App Store で見る</a>
+    <div class="links">
+      <a href="https://repeated-tarsal-b1a.notion.site/412d66fe4fb3801583d9c1ca8524b9f8">プライバシーポリシー</a>
+    </div>
+  </section>
+
+  <p class="links" style="text-align:center"><a href="https://minnanomannaka.formedge.app/forms/81f0f601-2df3-4354-9516-9fddffa1e848">お問い合わせ（どのアプリも共通）</a></p>
+  <footer>KOKI MORI</footer>
+</main>
 </body>
+</html>
